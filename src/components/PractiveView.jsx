@@ -46,6 +46,7 @@ export default function PracticeView({ deck, updateDeckPerformance, setCurrentVi
 				Card {currentCardIndex + 1} of {deck.cards.length}
 			</p>
 			<Card
+				isPressable
 				className={`w-64 h-64 mx-auto mb-4 cursor-pointer transition-transform duration-500 transform ${
 					isFlipped ? 'rotate-y-180' : ''
 				}`}

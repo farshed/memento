@@ -24,7 +24,7 @@ export default function DeckList({ decks, addDeck, setCurrentDeck, setCurrentVie
 					className="mr-2"
 				/>
 				<Button onClick={handleAddDeck}>
-					<Plus className="mr-2 h-7 w-7" /> Add Deck
+					<Plus className="mr-2 h-6 w-6" /> Add Deck
 				</Button>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -25,7 +25,9 @@ export default function App() {
 	}, []);
 
 	useEffect(() => {
-		saveToLocalStorage('decks', decks);
+		if (decks.length) {
+			saveToLocalStorage('decks', decks);
+		}
 	}, [decks]);
 
 	const addDeck = (name) => {
