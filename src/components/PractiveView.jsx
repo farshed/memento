@@ -48,11 +48,11 @@ export default function PracticeView({ deck, updateDeckPerformance, setCurrentVi
 			<Card
 				isPressable
 				className={`w-64 h-64 mx-auto mb-4 cursor-pointer transition-transform duration-500 transform ${
-					isFlipped ? 'rotate-y-180' : ''
+					isFlipped ? '[transform:rotateY(180deg)]' : ''
 				}`}
 				onClick={handleFlip}>
 				<CardBody className="flex items-center justify-center h-full">
-					<p className={`text-center ${isFlipped ? 'rotate-y-180' : ''}`}>
+					<p className={`text-center ${isFlipped ? '[transform:rotateY(-180deg)]' : ''}`}>
 						{isFlipped ? currentCard.back : currentCard.front}
 					</p>
 				</CardBody>
