@@ -24,7 +24,7 @@ export default function DeckList({ decks, addDeck, setCurrentDeck, setCurrentVie
 					className="mr-2"
 				/>
 				<Button onClick={handleAddDeck}>
-					<Plus className="mr-2 h-6 w-6" /> Add Deck
+					<Plus className="mr-1 h-6 w-6" /> Add Deck
 				</Button>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -40,14 +40,14 @@ export default function DeckList({ decks, addDeck, setCurrentDeck, setCurrentVie
 										setCurrentDeck(deck);
 										setCurrentView('cards');
 									}}>
-									<Book className="mr-2 h-4 w-4" /> View Cards
+									<Book className="mr-1 h-4 w-4" /> View Cards
 								</Button>
 								<Button
 									onClick={() => {
 										setCurrentDeck(deck);
 										setCurrentView('practice');
 									}}>
-									<PlayCircle className="mr-2 h-4 w-4" /> Practice
+									<PlayCircle className="mr-1 h-4 w-4" /> Practice
 								</Button>
 							</div>
 						</CardBody>
